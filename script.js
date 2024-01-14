@@ -24,14 +24,3 @@ function init() {
 }
 
 window.onload = init
-
-function submitForm() {
-   // Mengambil nilai input
-   var name = document.getElementById('name').value;
-   var email = document.getElementById('email').value;
-
-   // Menampilkan pesan pop-up
-   alert('Data yang akan disubmit:\nNama: ' + name + '\nEmail: ' + email);
-
-   // Tambahan: Anda dapat menambahkan logika lain di sini, seperti pengiriman data ke server menggunakan AJAX.
-}

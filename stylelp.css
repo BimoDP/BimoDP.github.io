@@ -27,6 +27,7 @@
     left: 50%;
     -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
+    white-space: nowrap;
     
  }
  
@@ -42,21 +43,21 @@
  
  @media only screen and (max-width: 768px) {
     .demo .main-title {
-       font-size: 3em;
-    }
+       font-size: 2em;
+  }
  }
 
  a {
    position: relative;
-    margin: 0;
-    justify-content: center;
-    top: 50%;
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0);
-    text-decoration: none; 
-    color: white;
-    background-color: transparent;
-    backdrop-filter: blur(2px); /* Efek blur pada latar belakang */
+   margin: 0;
+   justify-content: center;
+   top: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+   text-decoration: none; 
+   color: white;
+   background-color: transparent;
+   backdrop-filter: blur(1000px); /* Efek blur pada latar belakang */
    width: 100%;
    padding: 15px 250px;
    font-size: 18px;
