@@ -129,6 +129,12 @@ form {
   margin-bottom: 15%;
 }
 
+.burger .line-1,
+.burger .line-2,
+.burger .line-3 {
+    background-color: white; /* Warna putih */
+    border: 2px solid white;
+}
 
 h2 {
   font-size: 40px;
