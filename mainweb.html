@@ -127,20 +127,21 @@
             <strong>Thank you!</strong> Your message has been sent
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
-          <form id="myForm" data-aos="flip-left" name="form">
+          <form id="myForm" data-aos="flip-left" name="form" onsubmit="return validateForm()">
             <div class="mb-3">
-              <label for="name" class="form-label">Nama Lengkap</label>
-              <input type="text" class="form-control" name="nama" id="name" aria-describedby="name" placeholder="contoh : Bimo Dwiwangga">
+              <label for="name inputField" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" name="nama inputField" id="name inputField" required aria-describedby="name" placeholder="contoh : Bimo Dwiwangga">
+              <span id="errorMessage" class="error-message">Harap Isi Nama Anda</span>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="contoh@gmail.com">
+              <input type="email" required class="form-control" id="email" name="email" aria-describedby="email" placeholder="contoh@gmail.com">
             </div>
             <div class="mb-3">
               <label for="pesan" class="form-label">Pesan</label>
-              <textarea class="form-control" id="massage" rows="5" name="pesan" placeholder="Silahkan Di Isi Pesan Yang ingin di Sampaikan"></textarea>
+              <textarea class="form-control" required id="massage" rows="5" name="pesan" placeholder="Silahkan Di Isi Pesan Yang ingin di Sampaikan"></textarea>
             </div>
-            <button type="submit" class="btn btn-dark btn-custom-width btn-kirim">Send Message  <i class="bi bi-send-fill"></i></button>
+            <button type="submit" class="btn btn-dark btn-custom-width btn-kirim" id="submitButton">Send Message  <i class="bi bi-send-fill"></i></button>
             <button class="btn btn-dark btn-custom-width btn-loading d-none" type="button" disabled>
               <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
               <span role="status">Loading...</span>
